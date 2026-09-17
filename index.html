@@ -3,68 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fun With Nexxa | Free Fire Tournaments</title>
+  <meta name="theme-color" content="#080808">
+  <title>NITIN SARKAR | Free Fire Tournament</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
+  <div class="noise"></div>
+  <header class="nav">
+    <a class="brand" href="#home"><span>N</span> NITIN SARKAR</a>
     <nav>
-      <div class="logo">NITIN<span>SARKAR</span></div>
-      <a href="#tournaments">Tournaments</a>
+      <a href="#tournament">Tournament</a>
+      <a href="#rules">Rules</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <div class="hero-content">
-      <p class="tag">FREE FIRE • TOURNAMENT ORGANIZING</p>
-      <h1>Play Hard.<br><span>Win Big.</span></h1>
-      <p>Join exciting Free Fire tournaments organized by NITIN SARKAR.</p>
-      <a class="btn" href="#tournaments">View Tournaments</a>
-    </div>
+    <a class="nav-btn" href="#register">REGISTER</a>
   </header>
 
   <main>
-    <section class="profile">
-      <h2>NITIN SARKAR</h2>
-      <p>Free Fire Tournament Organizer</p>
-      <div class="links">
-        <a href="https://www.youtube.com/" target="_blank">▶ Fun With Nexxa</a>
-        <a href="https://www.instagram.com/im.nittin_/" target="_blank">📸 @im.nittin_</a>
-        <a href="mailto:nitinsarkar839@gmail.com">✉ nitinsarkar839@gmail.com</a>
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="eyebrow">FREE FIRE • ESPORTS • TOURNAMENT</p>
+        <h1>PLAY HARD.<br><span>WIN BIG.</span></h1>
+        <p class="lead">NITIN SARKAR presents a competitive Free Fire tournament built for squads ready to fight for the Booyah.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#register">JOIN TOURNAMENT</a>
+          <a class="btn ghost" href="#tournament">VIEW DETAILS</a>
+        </div>
+        <div class="mini-stats">
+          <div><b>₹5,000+</b><small>PRIZE POOL</small></div>
+          <div><b>₹100</b><small>STARTING ENTRY</small></div>
+          <div><b>4</b><small>PLAYERS / SQUAD</small></div>
+        </div>
       </div>
     </section>
 
-    <section id="tournaments" class="tournaments">
+    <section id="tournament" class="section">
       <div class="section-head">
-        <div>
-          <p class="tag">UPCOMING</p>
-          <h2>High Prize Pool Tournaments</h2>
-        </div>
-        <div class="badge">Entry ₹100 starting</div>
+        <p class="eyebrow">FEATURED EVENT</p>
+        <h2>FREE FIRE <span>TOURNAMENT</span></h2>
+        <p>Original tournament design inspired by modern esports aesthetics. Prize pool shown here is a proposed ₹5,000+ setup based on a tournament reference; confirm your final payout before publishing.</p>
       </div>
 
-      <div class="card">
-        <div>
-          <p class="game">🎮 FREE FIRE</p>
-          <h3>High Prize Pool Tournament</h3>
-          <p>Competitive matches • Tournament organizing • ₹100 starting entry</p>
+      <div class="event-grid">
+        <div class="poster-card">
+          <img src="assets/tournament-poster.png" alt="Nitin Sarkar Free Fire Tournament poster">
+          <div class="poster-glow"></div>
         </div>
-        <button class="join-btn" onclick="showJoin()">Join Tournament</button>
+        <div class="event-info">
+          <div class="prize"><small>PRIZE POOL</small><strong>₹5,000<span>+</span></strong><em>Proposed tournament setup</em></div>
+          <div class="info-grid">
+            <div><span>ENTRY</span><b>₹100 starting</b></div>
+            <div><span>MODE</span><b>Squad • 4 Players</b></div>
+            <div><span>FORMAT</span><b>Custom Room</b></div>
+            <div><span>HOST</span><b>NITIN SARKAR</b></div>
+          </div>
+          <div class="countdown-wrap">
+            <p>TOURNAMENT STARTS IN</p>
+            <div class="countdown" id="countdown">
+              <div><b id="days">00</b><small>DAYS</small></div>
+              <div><b id="hours">00</b><small>HOURS</small></div>
+              <div><b id="minutes">00</b><small>MIN</small></div>
+              <div><b id="seconds">00</b><small>SEC</small></div>
+            </div>
+            <p class="count-note">Set your tournament date in <code>script.js</code>.</p>
+          </div>
+          <a class="btn primary wide" href="#register">REGISTER NOW →</a>
+        </div>
       </div>
+    </section>
+
+    <section id="rules" class="section dark-section">
+      <div class="section-head">
+        <p class="eyebrow">COMPETE FAIR</p>
+        <h2>TOURNAMENT <span>HIGHLIGHTS</span></h2>
+      </div>
+      <div class="cards">
+        <article><div class="icon">⚡</div><h3>FAST ROOMS</h3><p>Room details and match updates can be shared with registered teams.</p></article>
+        <article><div class="icon">🏆</div><h3>PRIZE FOCUS</h3><p>Clear entry and prize information so players know the event structure.</p></article>
+        <article><div class="icon">🛡</div><h3>FAIR PLAY</h3><p>No hacks, exploits or abusive behaviour. Keep every match competitive.</p></article>
+        <article><div class="icon">🔥</div><h3>BOOYAH</h3><p>Bring your best squad, dominate the lobby and chase the win.</p></article>
+      </div>
+    </section>
+
+    <section id="register" class="section register-section">
+      <div class="register-box">
+        <div>
+          <p class="eyebrow">READY TO DROP?</p>
+          <h2>REGISTER YOUR <span>SQUAD</span></h2>
+          <p>Fill in your team details. This demo form opens your email client with a ready-made registration message.</p>
+        </div>
+        <form id="registerForm">
+          <input id="team" required placeholder="Team / Squad Name">
+          <input id="leader" required placeholder="Team Leader Name">
+          <input id="uid" required placeholder="Free Fire UID">
+          <input id="phone" required placeholder="WhatsApp / Phone">
+          <button class="btn primary wide" type="submit">SEND REGISTRATION</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div><span>YOUTUBE</span><a href="https://www.youtube.com/" target="_blank">Fun With Nexxa</a></div>
+      <div><span>INSTAGRAM</span><a href="https://www.instagram.com/im.nittin_/" target="_blank">@im.nittin_</a></div>
+      <div><span>EMAIL</span><a href="mailto:nitinsarkar839@gmail.com">nitinsarkar839@gmail.com</a></div>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> NITIN SARKAR • Fun With Nexxa</p>
-  </footer>
-
-  <div id="modal" class="modal" aria-hidden="true">
-    <div class="modal-box">
-      <button class="close" onclick="closeJoin()">×</button>
-      <h2>Join Tournament</h2>
-      <p>Entry starts at <strong>₹100</strong>.</p>
-      <p>Contact NITIN SARKAR for registration and current tournament details.</p>
-      <a class="btn" href="mailto:nitinsarkar839@gmail.com?subject=Free Fire Tournament Registration">Email to Register</a>
-    </div>
-  </div>
-
+  <footer>© <span id="year"></span> NITIN SARKAR • FREE FIRE TOURNAMENT ORGANIZING</footer>
   <script src="script.js"></script>
 </body>
 </html>
